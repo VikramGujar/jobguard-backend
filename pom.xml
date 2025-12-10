@@ -15,13 +15,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.0</version> <!-- or current stable -->
+        <version>3.2.5</version> <!-- or current stable -->
         <relativePath/>
     </parent>
 
     <properties>
         <java.version>17</java.version>
-        <spring-cloud.version>2023.0.0</spring-cloud.version> <!-- adjust to latest release train -->
+        <spring-cloud.version>2023.0.3</spring-cloud.version> <!-- adjust to latest release train -->
     </properties>
 
     <!-- All common versions managed here -->
@@ -41,6 +41,7 @@
     <modules>
         <module>auth-service</module>
         <module>discovery-server</module>
+        <module>api-gateway</module>
     </modules>
 
 
