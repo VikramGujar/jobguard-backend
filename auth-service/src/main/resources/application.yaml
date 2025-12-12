@@ -1,10 +1,21 @@
 spring:
   application:
     name: auth-service
-  cloud:
-    gateway:
-      routes:
-        - id: auth-service
-          uri: lb://AUTH-SERVICE
-          predicates:
-            - Path=/auth/**
+
+server:
+  port: 8081
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/jobguard_auth?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
