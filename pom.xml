@@ -11,20 +11,20 @@
 
     <name>JobGuard</name>
 
-    <!-- Spring Boot parent -->
+    <!-- Spring Boot Parent -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.5</version> <!-- or current stable -->
+        <version>3.2.5</version>
         <relativePath/>
     </parent>
 
     <properties>
         <java.version>17</java.version>
-        <spring-cloud.version>2023.0.3</spring-cloud.version> <!-- adjust to latest release train -->
+        <spring-cloud.version>2023.0.3</spring-cloud.version>
     </properties>
 
-    <!-- All common versions managed here -->
+    <!-- Spring Cloud BOM -->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -37,12 +37,11 @@
         </dependencies>
     </dependencyManagement>
 
-    <!-- List of modules (we will create these folders/projects next) -->
+    <!-- Backend Microservices -->
     <modules>
         <module>auth-service</module>
         <module>discovery-server</module>
         <module>api-gateway</module>
     </modules>
-
 
 </project>
