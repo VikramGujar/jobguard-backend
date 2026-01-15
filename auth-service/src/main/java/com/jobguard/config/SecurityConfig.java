@@ -1,7 +1,7 @@
 package com.jobguard.config;
 
-import com.jobguard.auth.config.JwtAuthFilter;
-import com.jobguard.auth.service.UserService;
+import com.jobguard.config.JwtAuthFilter;
+import com.jobguard.service.UserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
